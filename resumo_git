@@ -1,0 +1,45 @@
+https://www.youtube.com/watch?v=-HqC_yfN9hI&list=PLl-Um_Xc4KnOWq4oJng_uDaYzV04Ngx-J
+https://docs.github.com/pt/github-ae@latest
+
+https://github.com/waltereliasclak
+walterelias10@gmail.com
+w@lter1977
+senha ssh: 12345
+
+***** configurar *****
+git config --global user.name "walter clak"
+git config --global user.email "walterelias10@gmail.com"
+
+
+***** Verificar se há chaves SSH ***** 
+ls -al ~/.ssh
+
+***** gerar chave *****
+- crio repositorio GIT
+- git clone git@github.com:waltereliasclak/repositorio.git
+- ssh-keygen -t ed25519 -C "walterelias10@gmail.com"
+- cat ~/.ssh/id_ed25519.pub 
+
+***** clico de vida *****
+- untracked  - feito mas nao ta adicionado ao git
+- unmodified - nao foi modificado mas ja existe
+- modified   - foi modificado mas ja existe
+- staged     - preparado para commit
+
+***** volta os commits *****
+git reset --soft
+git reset --mixed
+git reset --hard "ignora o commit q foi enviado"
+
+git init
+git add "arquivo" ou git add . "todos arquivos"
+git commit -m "descrição"
+git push -u origin main
+git checkout arquivo.txt "desfazer a alteração" 
+git branch "nome_nova_branch"
+git branch -D testing "apagando branch"
+git checkout "branch"
+git merge 'branch_secundario' estando na  main puxa o que foi feito
+git checkout -b 'nova branch' cria e acessa a branch
+
+git pull "puxa as alterações."
